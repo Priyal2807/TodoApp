@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To-do list</title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="/assets/todo.js"></script>
+  <link rel="stylesheet" href="/assets/style.css"> <!-- no need to write public as middle ware has been created for pubic-->
+  </head>
+  <body>
+    <h1><img src="/assets/todo.png" class="beforeImage"></h1>
+  <div id="todo-table">
+    <form>
+      <input type="text" name="item" placeholder="add new item" required>
+      <button type="Submit" >Add Item</button>
+    </form>
+    <ul>
+      <% for(var i= 0;i<todos.length;i++) { %>
+        <li><%= todos[i].item %></li>
+      <% } %>
+
+    </ul>
+  </div>
+  </body>
+</html>
