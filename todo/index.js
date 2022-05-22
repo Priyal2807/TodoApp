@@ -8,7 +8,7 @@ app.set('view engine','ejs');
 
 
 //static files
-app.use(express.static('../todo/public'));//by not speficifying the route this is applicable to any url hit
+app.use(express.static(__dirname +'/public'));//by not speficifying the route this is applicable to any url hit
 
 //fire todoControllers
 todoController(app); //firing the function we get from module.exports by passing the app created in this file using express to allow it to use get,post,delete
