@@ -24,7 +24,7 @@ module.exports = function(app){
 
     Todo.find({},function(err,data){
       if(err) throw err;
-        res.render('todo',{todos:data});  //this data comes from find method
+        res.render('todo.ejs',{todos:data});  //this data comes from find method
     });//retreives all items
 
   });
