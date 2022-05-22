@@ -14,18 +14,26 @@
   <link rel="stylesheet" href="/assets/style.css"> <!-- no need to write public as middle ware has been created for pubic-->
   </head>
   <body>
-    <h1><img src="/assets/todo.png" class="beforeImage"></h1>
+    <!--<h1><img src="/assets/todo.png" class="beforeImage"></h1>-->
+<div id="container">
+<div id="nameDiv">
+<p id="name">TODO APP</p>
+</div>
+</div>
   <div id="todo-table">
     <form>
       <input type="text" name="item" placeholder="add new item" required>
       <button type="Submit" >Add Item</button>
     </form>
-    <ul>
+
+  </div>
+  <div id="list">
+   <ul>
       <% for(var i= 0;i<todos.length;i++) { %>
         <li><%= todos[i].item %></li>
       <% } %>
 
     </ul>
-  </div>
+    </div>
   </body>
 </html>

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#todo-table').hide();
+  /*$('#todo-table').hide();
   $('img').on('click',function(){
     $('#todo-table').toggle();
     if($('#todo-table').css('display') == 'block'){
@@ -9,7 +9,7 @@ $(document).ready(function(){
       $('img').removeClass('afterImage');
     }
 
-  });
+  });*/
 
   $('form').on('submit', function(){
 

@@ -1,5 +1,5 @@
 var express = require('express');
-var todoController = require('./controllers/todo-controller'); //here todoController is storing the function made in the todo-controller file and todoController is in itself a function
+var todoController = require('./controller/todo-controller'); //here todoController is storing the function made in the todo-controller file and todoController is in itself a function
 var app = express();
 
 

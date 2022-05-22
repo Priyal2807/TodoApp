@@ -1,19 +1,30 @@
-body{
-    background: #0d1521;
+body {
+    background: #B8D5F1;
     font-family: tahoma;
     color: #989898;
 }
 
-#todo-table{
+#name{
+    font-size:50px;
+    font-family:monospace;
+    color: black;
+}
+#nameDiv {
+    border-bottom: dashed;
+    text-align:center;
+}
+
+#todo-table, #list {
     position: relative;
-    width: 95%;
-    background: #090d13;
+    width: 78%;
+    background: #E2E6EA;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 10px 5px 5px 1px rgb(63, 64, 67);
-    margin-top: 30vh;
+    margin-top: 5%;
+    margin-left: 22%;
 }
 
 #todo-table form:after{
@@ -23,26 +34,31 @@ body{
     clear: both;
 }
 
-input[type="text"]{
-    width: 70%;
+input[type="text"] {
+    width: 85%;
     padding: 20px;
-    background:#181c22;
+    background: #525354;
     border: 0;
     float: left;
-    font-size: 20px;
-    color: #989898;
+    font-size: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-right:2%;
 }
 
-button{
-    padding: 20px;
-    width: 24%;
+button {
+    padding: 10px;
+    position:fixed;
     float: right;
-    background: #23282e;
+    background: #525354;
     border: 0;
-    box-sizing: border-box;
+    width:5%;
     color: #fff;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 10px;
+    font-family: monospace;
+    border-radius: 10px;
+    
 }
 
 ul{
@@ -53,12 +69,14 @@ ul{
 
 li{
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
-    font-family: arial;
-    font-size: 20px;
+    font-family: monospace;
+    font-size: 15px;
     cursor: pointer;
     letter-spacing: 1px;
+    color: black;
+
 }
 
 li:hover{
@@ -86,4 +104,12 @@ li:hover{
   margin-right: auto;
   width: 20vh;
   height: 12vh;
+}
+#container {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin-left: -1vh;
+    background-color: white;
 }
