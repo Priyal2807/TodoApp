@@ -1,4 +1,5 @@
-
+const path = require('path');
+require('app-module-path').addPath(path.join(__dirname, '../'));
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false }); //this is a piece of middleware which handles the post data for the post handler
 var mongoose = require('mongoose');
@@ -24,7 +25,7 @@ module.exports = function(app){
 
     Todo.find({},function(err,data){
       if(err) throw err;
-        res.render('../views/todo.ejs',{todos:data});  //this data comes from find method
+        res.render('../todo/views/todo.ejs',{todos:data});  //this data comes from find method
     });//retreives all items
 
   });
