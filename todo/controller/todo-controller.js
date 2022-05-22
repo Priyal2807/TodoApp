@@ -2,7 +2,8 @@
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false }); //this is a piece of middleware which handles the post data for the post handler
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/todo', function (err) { // if the db does not exist it will create the database
+const uri = "mongodb+srv://new-user-1:2AjwdB3rsxNNBbKN@democluster.jix3s.mongodb.net/todo?retryWrites=true&w=majority";
+mongoose.connect(uri, function (err) { // if the db does not exist it will create the database
 
    if (err) throw err;
 
