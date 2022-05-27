@@ -1,8 +1,10 @@
 const path = require('path');
-require('app-module-path').addPath(path.join(__dirname, '../'));
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false }); //this is a piece of middleware which handles the post data for the post handler
 var mongoose = require('mongoose');
+require('app-module-path').addPath(path.join(__dirname, '../'));
+
+
 const uri = process.env.MONGODB_URI;
 mongoose.connect(uri, function (err) { 
    if (err) throw err;
